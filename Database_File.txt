@@ -1,0 +1,13 @@
+Table - trip
+
+CREATE TABLE `trip` (
+  `name` text NOT NULL,
+  `age` int(3) NOT NULL,
+  `gender` varchar(8) NOT NULL,
+  `email` varchar(22) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `other` text NOT NULL,
+  `dt` datetime NOT NULL DEFAULT current_timestamp()
+);
+
+commit;
