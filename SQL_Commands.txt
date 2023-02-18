@@ -1,0 +1,30 @@
+                                                                 SQL Commands
+                                                                 
+_________________________________________________________________________________________________________________________________________________________________________
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+_________________________________________________________________________________________________________________________________________________________________________
+
+Table - trip
+
+CREATE TABLE `trip` (
+  `name` text NOT NULL,
+  `age` int(3) NOT NULL,
+  `gender` varchar(8) NOT NULL,
+  `email` varchar(22) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `other` text NOT NULL,
+  `dt` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+INSERT INTO `trip` (`name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES
+('Diya', 27, 'Female', 'diya@gmail.com', '9990008889', 'Excited!!!', '2022-04-08 00:12:30'),
+('Riya', 34, 'Female', 'riya@gmail.com', '8889990007', 'Waiting for it :)', '2022-04-08 00:18:24'),
+('Tiya Roy', 45, 'Female', 'tiya@2022', '7778889990', 'Waiting for it!!!', '2023-02-18 17:10:46');
+COMMIT;
+_________________________________________________________________________________________________________________________________________________________________________
